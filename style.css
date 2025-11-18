@@ -638,6 +638,14 @@ video.bg-video:not(.background-combined .bg-video) {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     animation: float 4s ease-in-out infinite;
 }
+.circle-photo p{
+   position: relative;
+   color: rgba(255, 230, 216, 0.8);
+   line-height: 1.5rem;
+   font-size: 1rem;
+   text-shadow: 0 0 4px rgba(255, 60, 0, 0.4);
+   
+}
 
 .circle-photo:nth-child(2) {
     animation-delay: 1.3s;
@@ -860,4 +868,5 @@ video.bg-video:not(.background-combined .bg-video) {
         animation: subtleZoom 40s ease-in-out infinite alternate;
     }
 }
+
 
