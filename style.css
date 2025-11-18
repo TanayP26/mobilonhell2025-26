@@ -644,7 +644,7 @@ video.bg-video:not(.background-combined .bg-video) {
 
 .circle-photo h3 {
     margin-top: 10px;        /* space below image */
-    color: White;            /* ensure it's visible */
+    color: black;            /* ensure it's visible */
     text-align: center;
 }
 
