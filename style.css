@@ -644,7 +644,7 @@ video.bg-video:not(.background-combined .bg-video) {
 
 .circle-photo h3 {
     margin-top: 10px;        /* space below image */
-    color: black;            /* ensure it's visible */
+    color: White;            /* ensure it's visible */
     text-align: center;
 }
 
@@ -869,6 +869,7 @@ video.bg-video:not(.background-combined .bg-video) {
         animation: subtleZoom 40s ease-in-out infinite alternate;
     }
 }
+
 
 
 
