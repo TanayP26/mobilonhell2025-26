@@ -60,3 +60,50 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+// office member data
+const officeMembers = [
+    {
+        name: "Moksh",
+        role: "GENERAL SECRETARY",
+        img: "moksh.jpg",
+        desc: "Responsible for managing operations, coordinating members, and maintaining discipline."
+    },
+    {
+        name: "Vasu Bhatia",
+        role: "PRESIDENT",
+        img: "vasu bhatia.jpg",
+        desc: "Oversees all club operations, leads strategic decisions and maintains the brand vision."
+    },
+    {
+        name: "Lalit",
+        role: "VICE PRESIDENT",
+        img: "ll.jpg",
+        desc: "Supports President, manages teams, and ensures successful execution of events."
+    }
+];
+
+// open modal on click
+document.querySelectorAll(".circle-photo").forEach((photo, index) => {
+    photo.addEventListener("click", () => {
+        const data = officeMembers[index];
+
+        document.getElementById("modalPhoto").src = data.img;
+        document.getElementById("modalName").innerText = data.name;
+        document.getElementById("modalRole").innerText = data.role;
+        document.getElementById("modalDesc").innerText = data.desc;
+
+        document.getElementById("fireModal").style.display = "flex";
+    });
+});
+
+// close modal
+document.getElementById("closeModal").onclick = () => {
+    document.getElementById("fireModal").style.display = "none";
+};
+
+// close when clicking outside
+window.onclick = (e) => {
+    if (e.target.id === "fireModal") {
+        document.getElementById("fireModal").style.display = "none";
+    }
+};
